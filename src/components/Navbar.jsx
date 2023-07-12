@@ -37,9 +37,20 @@ border: none;
 
 const Center = styled.div`
 flex: 1;
+text-align: center;
 `;
+
+const Logo = styled.h1`
+fpnt-weight: bold;
+`;
+
 const Right = styled.div`
 flex: 1;
+`;
+
+const MenuItem = styled.div`
+font-size: 14px;
+cursor: pointer;
 `;
 
 const Navbar = () => {
@@ -53,8 +64,11 @@ const Navbar = () => {
                         <Search />
                     </SearchContainer>
                 </Left>
-                <Center>Center</Center>
-                <Right>Right</Right>
+                <Center><Logo>ALINUKES</Logo></Center>
+                <Right>
+
+                    <MenuItem>REGISTER</MenuItem>
+                </Right>
             </Wrapper>
         </Container>
     )
